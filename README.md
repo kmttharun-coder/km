@@ -41,8 +41,10 @@ The form currently shows a thank-you message only and does not send email. To re
 
 ## Uploading to GitHub
 
-1. Create a new public repository on GitHub, for example `portfolio`.
-2. Upload the four files (`index.html`, `style.css`, `script.js`, `README.md`) to the repository root. You can drag and drop them on the GitHub web page, or use the commands below.
+1. Create a new **public** repository on GitHub, for example `portfolio`.
+2. Upload the files (`index.html`, `style.css`, `script.js`, `README.md`) to the **root** of the repository. They should appear on the first screen, not inside a folder.
+
+Or use the terminal:
 
 ```bash
 cd portfolio
@@ -62,6 +64,13 @@ git push -u origin main
 4. Choose the `main` branch and the `/ (root)` folder, then click **Save**.
 5. After a minute or two, your site will be live at `https://<your-username>.github.io/portfolio/`.
 
+## Troubleshooting
+
+- **Site not showing:** Make sure `index.html` is in the repository root and the Pages branch is `main` with `/ (root)` selected.
+- **Repository is private:** GitHub Pages on a free account needs a public repository. Change it under **Settings** > **General**.
+- **Push asks for a password:** Use a Personal Access Token instead of your account password, or sign in with `gh auth login`.
+- **Build fails:** Check the **Actions** tab for the error details.
+
 ## Technologies Used
 
 - HTML5
@@ -73,3 +82,4 @@ git push -u origin main
 **Tharun K M**
 AI & Data Science student, Krishnagiri, Tamil Nadu
 Email: kmttharun@gmail.com
+
